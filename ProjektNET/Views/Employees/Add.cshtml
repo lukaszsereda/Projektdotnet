@@ -1,0 +1,28 @@
+﻿@model ProjektNET.Models.AddEmployeeViewModel
+@{
+}
+<h1>Dodaj Pracownika</h1>
+<form method="post" action="Add" class="mt-5">
+  <div class="mb-3">
+    <label for="" class="form-label">Imię</label>
+    <input type="text" class="form-control" asp-for="Name">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Adres Email</label>
+    <input type="email" class="form-control" asp-for="Email">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Wysokość pensji</label>
+    <input type="number" class="form-control" asp-for="Salary">
+  </div>
+  <div class="mb-3">
+        <label for="" class="form-label">Data urodzenia</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+  </div>
+  <div class="mb-3">
+        <label for="" class="form-label">Stanowisko</label>
+        <input type="text" class="form-control" asp-for="Department">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>
